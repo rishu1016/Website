@@ -237,11 +237,12 @@
                 const room = subject.getAttribute('data-room');
                 const faculty = subject.getAttribute('data-faculty');
                 subjectName.textContent = subject.textContent;
-                roomInfo.textContent = Room: ${room};
-                facultyInfo.textContent = Faculty: ${faculty};
+                roomInfo.textContent = `Room: ${room}`;
+                facultyInfo.textContent = `Faculty: ${faculty}`;
                 modal.style.display = 'block';
             });
         });
+        
 
         closeBtn.addEventListener('click', () => {
             modal.style.display = 'none';
